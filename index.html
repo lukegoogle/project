@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luke</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #000;
+            background-color: #ffffff;
+        }
+
+ 	a {
+            color: #4682B4;
+        }
+
+        .main-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 60px 1%;
+            gap: 14%;
+            flex-wrap: wrap; /* Allows stacking on mobile */
+            min-height: 100vh; /* Centers content vertically on the screen */
+        }
+
+        .profile-photo {
+            width: 250px;
+            max-width: 360px;
+            height: auto;
+        }
+
+        .bio-content {
+            flex: 1;
+            min-width: 300px;
+            max-width: 500px;
+        }
+
+        .bio-content h1 {
+            font-size: 18pt;
+            font-weight: normal;
+            margin-bottom: 20px;
+        }
+
+        .bio-content p {
+            font-size: 12pt;
+            margin: 12px 0;
+            line-height: 1.5;
+        }
+
+        /* Mobile Adjustments */
+        @media (max-width: 768px) {
+            .main-container {
+                padding: 40px 20px;
+                gap: 30px;
+                flex-direction: column;
+            }
+            
+            .bio-content h1 {
+                font-size: 32px;
+            }
+
+            .bio-content p {
+                text-align: center;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <main class="main-container">
+        <img src="Luke Clark.png" alt="Luke Clark" class="profile-photo">
+        
+        <div class="bio-content">
+            <h1>Luke C.</h1>
+            <p>I’m a firm believer in sharing the wins and the "not-yet-wins." On November 24th, 2025 I sat for the FINRA SIE exam and came up short with a 52%. Not the score I wanted, but I’ve got the roadmap to fix it. Reach me at <a href="mailto:luke@lukecal.com">luke@lukecal.com</a>.</p>
+            <p></p>
+        </div>
+    </main>
+
+</body>
+</html>
